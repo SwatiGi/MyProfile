@@ -9,6 +9,37 @@
     <h1>Name : Swati</h1>
 <h2>Age : 25</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptate quia odit quae nisi quos itaque dolorem repudiandae eveniet voluptatum!</p>
+
 <select name="" id=""> <option value=""> English</option><option value="">Hindi </option><option value=""> Maths</option><option value="">Bio </option></select>
+<div id="header" style="padding: 1rem 0; background-color: lightblue">
+      <h1 id="main-heading" style="margin: 0">Fruit Shop</h1>
+    </div>
+    <div>
+      <h2 id="basket-heading">Fruits In Basket</h2>
+      <ul class="fruits">
+        <li class="fruit">Banana</li>
+        <li class="fruit">Apple</li>
+        <li class="fruit">Orange</li>
+        <li class="fruit">Kiwi</li>
+      </ul>
+    </div>
+    <div id="thanks"></div>
+
+
+<script>
+let heading = document.getElementById('main-heading');
+heading.innerText = 'Fruit World'
+heading.style.backgroundColor = 'green'
+heading.style.padding = '1rem 0'
+heading.style.color = 'orange'
+heading.style.borderBottom = '2px solid orange'
+
+let basket = document.getElementById('basket-heading');
+basket.style.color = 'green'
+let visit = document.getElementById('thanks');
+let para = document.createElement('p');
+para.textContent = 'Please visit us again';
+visit.appendChild(para)
+</script>
 </body>
 </html>
