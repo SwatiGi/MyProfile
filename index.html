@@ -39,6 +39,14 @@ let visit = document.getElementById('thanks');
 let para = document.createElement('p');
 para.textContent = 'Please visit us again';
 visit.appendChild(para)
+
+
+let font = document.getElementsByClassName('fruit');
+for (let i = 0; i < font.length; i++){
+    
+font[i].style.fontWeight = 'bold'
+}
+font[2].style.backgroundColor = 'yellow'
 </script>
 </body>
 </html>
